@@ -1,0 +1,1 @@
+{"options":{},"indexes":[{"v":2,"key":{"_id":1},"name":"_id_","ns":"oushodsheba_pharmacy.reconciliations"},{"v":2,"key":{"pharmacyId":1},"name":"reconciliation_pharmacy_id_","ns":"oushodsheba_pharmacy.reconciliations"}],"uuid":"3daa86c1ed2843c4902723e108d2f6a2"}
