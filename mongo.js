@@ -8,8 +8,8 @@ print('                      Use Oushodsheba Database                         ')
 print('===================================================================\n\n')
 
 
-var pharmacyId = 15;
-var userId = 0;
+var pharmacyId = 14;
+var userId = 1;
 
 use oushodsheba_pharmacy;
 
