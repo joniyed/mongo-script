@@ -21,7 +21,7 @@ MONGO_PASSWORD=""
 AUTH_PARAM=""
 #AUTH_PARAM="--username=${MONGO_USER} --password=${MONGO_PASSWORD} --authenticationDatabase admin"
 
-# mongorestore --db oushodsheba_pharmacy PMS_DB_PATH --drop
+#mongorestore --db oushodsheba_pharmacy PMS_DB_PATH --drop
 mongorestore --host ${MONGO_HOST} --port ${MONGO_PORT} --db oushodsheba_pharmacy ${AUTH_PARAM} ${PMS_DB_PATH} --drop
 
 echo
@@ -35,7 +35,7 @@ echo
 echo
 
 # mongo < test.js
-
+mongo --port 27017 -u "" -p "" --authenticationDatabase "" < test.js
 mongo --port 27017 -u "" -p "" --authenticationDatabase "" < mongo.js
 # mongo --port 27017 < mongo.js
 

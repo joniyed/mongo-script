@@ -6,9 +6,9 @@ use oushodsheba_pharmacy;
 
 var i = 1;
 
-while (i < 100) {
+while (i < 200) {
 
-    if (i != 15) {
+    if (i != 0) {
         db.accounts.deleteMany({ pharmacyId: i });
         db.configurations.deleteMany({});
         db.customerPayments.deleteMany({ pharmacyId: i });
@@ -27,6 +27,8 @@ while (i < 100) {
         db.vendorPayments.deleteMany({ pharmacyId: i });
         db.vendors.deleteMany({ pharmacyId: i });
         db.numberSequences.deleteMany({});
+        db.offline_configs.deleteMany({});
+        db.syncRecords.deleteMany({}); 
     }
     i++;
 }
