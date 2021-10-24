@@ -8,10 +8,10 @@ print('                      Use Oushodsheba Database                         ')
 print('===================================================================\n\n')
 
 
-var pharmacyId = 0;
+var pharmacyId = 38;
 var userId = 1;
 
-use oushodsheba_pharmacy;
+use oushodsheba_pharmacy_offline;
 
 var index = 1;
 db.accounts.find().forEach(function (myDoc) {
@@ -41,7 +41,8 @@ db.products.find().forEach(function (myDoc) {
             {
                 "pharmacyId": pharmacyId,
                 "localId": localId,
-                "createdAt": new Date()
+                "createdAt": new Date(),
+                "syncedAt": new Date()
             }
         }, false, true);
     index++;
